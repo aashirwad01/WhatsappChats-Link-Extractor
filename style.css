@@ -1,0 +1,79 @@
+:root{
+    --main-bg-color:rgba(3, 72, 104, 0.5);
+  }
+  
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+   
+}
+
+section{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  
+  background: var(--main-bg-color);
+  color: #f1f1f1;
+  min-width: 50%;
+  max-width: 80%;
+  padding: 20px;
+  margin-bottom: 2%;
+}
+header{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  margin-top: 5%;
+  margin-bottom: 3%;
+  background: var(--main-bg-color);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+
+#myVideo {
+width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.custom-file-upload:hover {
+    background-color: grey;
+}
+.custom-file-upload:focus-within {
+    outline: 5px solid;
+}
+
+input[type="file"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* 1 */
+    clip-path: inset(50%);
+    border: 0;
+}

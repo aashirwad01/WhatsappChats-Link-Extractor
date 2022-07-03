@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whatsapp Chat URL Reader</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    <header>
+        <h1>Whatsapp Chat URL Reader</h1>
+    </header>
+   <section>
+    <h3>Upload chat in txt format here</h3>
+    <h3>On a mobile device, open the chat you wish to extract urls from. Open the context menu -> More -> Export chat. (You may choose to export the chat "Without Media"). Select an export destination of your choice e.g email, google drive etc,</h3>
+    <h3>Upload the file in the below dialog </h3>
+    <!-- <br>
+    <span id="file-upload-message"></span>
+    <br> -->
+    <label for="file-upload" class="custom-file-upload">Upload File Here</label>
+   
+    <input placeholder="Select File" type="file" id="file-upload">
+    <br>
+    <label id="file-name"></label>
+    <br>
+   </section>
+
+   <section>
+    <h3>Output Here</h3>
+    <div id="file-output"></div>
+
+   </section>
+   
+   
+    
+<script src="script.js"></script>
+    
+</body>
+</html>
